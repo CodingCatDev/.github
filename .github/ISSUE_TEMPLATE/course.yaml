@@ -1,0 +1,32 @@
+name: 🧑‍🎓 Course
+description: "New Course"
+title: "🧑‍🎓 Course: "
+labels: [course:new]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a new course 🙏
+  - type: textarea
+    id: course-description
+    validations:
+      required: true
+    attributes:
+      label: "🔖 Course description"
+      description: "An idea for a course. Try to include as any sections / lessons as possible."
+      placeholder: "Python for a Purrfect Peep..."
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "👀 Have you spent some time to check if this issue has been raised before?"
+      description: "Have you Googled for a similar issue or checked our older issues for a similar bug?"
+      options:
+        - label: "I checked and didn't find similar issue"
+          required: true
+  - type: checkboxes
+    id: read-code-of-conduct
+    attributes:
+      label: "🏢 Have you read the Code of Conduct?"
+      options:
+        - label: "I have read the [Code of Conduct](https://github.com/CodingCatDev/.github/blob/main/CODE_OF_CONDUCT.md)"
+          required: true
